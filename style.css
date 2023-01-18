@@ -1,0 +1,71 @@
+.navbar{
+    background-color: black;
+    border-radius: 25px;
+}
+
+.navbar{
+    overflow: auto;
+}
+
+.navbar li{
+    float: left;
+    list-style:none;
+    margin: 15px 20px;
+    font-size: 16px;
+}
+.navbar li a{
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    background-color:#E6E6FA;
+    color:black
+}
+.navbar input{
+    float: right;
+    padding: 2px 5px;
+    margin: 10px 50px;
+    border-radius: 25px;
+}
+.section{
+    background-color:#E6E6FA;
+}
+.container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.sides{
+    width: 700px;
+    height:500px;
+    background-image:url(img1.jpg);
+    background-size: cover;
+    animation: sides 20s infinite;
+}
+@keyframes sides{
+     25%{
+        background: url(img2.jpg);
+        background-size: cover;
+     }
+     50%{
+        background: url(img3.jpg);
+        background-size: cover;
+     }
+     75%{
+        background: url(img4.jpg);
+        background-size: cover;
+     }
+     100%{
+        background: url(img5.jpg);
+        background-size: cover;
+     }
+}
+span{
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
